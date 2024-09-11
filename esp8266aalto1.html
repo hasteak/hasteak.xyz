@@ -3,37 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to hasteak's World</title>
+    <title>hasteak - Data Query</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             color: #fff;
-            text-align: center;
-            background-image: url('background.jpg'); /* Placeholder for your background image */
+            background-image: url('background02.png');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        h1 {
-            font-size: 3em;
-            margin: 0.2em;
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
         }
 
-        p {
-            font-size: 1.5em;
-            margin: 0.5em;
+        input, select {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>esp8266 Aalto 1</h1>
-    <p>just testing POC page</p>
+    <div class="form-container">
+        <h1>Data Query</h1>
+        <form id="dataForm">
+            <div>
+                <label for="textField1">Field 1:</label>
+                <input type="text" id="textField1" name="textField1" placeholder="Enter value">
+            </div>
+            <div>
+                <label for="textField2">Field 2:</label>
+                <input type="text" id="textField2" name="textField2" placeholder="Enter value">
+            </div>
+            <div>
+                <label for="dropdown">Select Option:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <!-- You can add more options here -->
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('dataForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Simulate a GET request with a response
+            const urlParams = new URLSearchParams(window.location.search);
+            const response = "tmxc=0.3178,tmxc1=278.3645";
+
+            // Respond if a GET query is made
+            if (urlParams.has('query')) {
+                alert(response);
+            } else {
+                alert('Please submit a valid query');
+            }
+        });
+    </script>
 </body>
 </html>
