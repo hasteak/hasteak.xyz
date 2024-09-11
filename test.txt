@@ -1,1 +1,1 @@
-tmxc=0.3178,tmxc1=278.3645
+funcnumber=3
