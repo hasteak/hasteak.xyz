@@ -1,1 +1,1 @@
-funcnumber=3
+fn=4;txt=I am in the Prototype room
