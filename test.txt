@@ -1,1 +1,1 @@
-fn=4;txt=Good morning, Katia!;
+fn=3;txt=Good morning, Katia!;
