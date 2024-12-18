@@ -1,1 +1,1 @@
-fn=4;txt=Андрей, держи хуй бодрей!;
+fn=3;txt=Merry Christmas!;
