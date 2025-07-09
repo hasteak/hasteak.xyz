@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hasteak inside</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&family=Rajdhani&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+            padding: 20px;
+            font-family: 'Rajdhani', sans-serif; /* base font */
             color: #fff;
             background-image: url('background02.png');
             background-size: cover;
@@ -19,34 +23,35 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-            padding: 20px;
             overflow: hidden;
         }
 
         h1 {
+            font-family: 'Bebas Neue', sans-serif;
             font-size: 2em;
             margin-bottom: 10px;
         }
 
         p {
+            font-family: 'Playfair Display', serif;
             font-size: 1.5em;
             margin: 0;
             line-height: 1.5;
         }
 
-        /* Media query for devices with a max width of 600px (mobile phones) */
+        /* Responsive adjustments */
         @media (max-width: 600px) {
             body {
                 padding: 10px;
-                justify-content: flex-start; /* Centers the text vertically */
+                justify-content: flex-start;
             }
 
             h1 {
-                font-size: 1.5em; /* Smaller font size on mobile */
+                font-size: 1.5em;
             }
 
             p {
-                font-size: 1.2em; /* Smaller font size for the paragraph */
+                font-size: 1.2em;
                 line-height: 1.3;
             }
         }
