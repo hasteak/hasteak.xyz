@@ -1,1 +1,1 @@
-fn=3;txt=Merry Christmas and Happy New Year!;
+fn=4;txt=It is the sauna time!;
