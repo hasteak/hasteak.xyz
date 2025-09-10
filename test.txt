@@ -1,1 +1,1 @@
-fn=4;txt=It is the sauna time!;
+fn=3;txt=It is the sauna time!;
